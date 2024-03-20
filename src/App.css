@@ -3,16 +3,53 @@
 .App {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #e0f7fa; /* Light blue background */
+  background-color: rgba(61, 4, 71, 0.2); /* Light, transparent purple */
   color: #263238; /* Darker text color for contrast */
+  min-height: 100vh; /* Make sure it fills the whole viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
+
+/* Additional styles for weather display and other components */
+.weather-container {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px; /* Set a max-width for the container */
+  width: 100%; /* Make it responsive */
+  margin: 20px;
+}
+
+/* You might want to style other elements like buttons, inputs, etc. */
+button {
+  background-color: #ce93d8; /* Match button color with the theme */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ba68c8; /* Slightly darker on hover */
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
 
 .App {
   text-align: center;
 }
 
-/* Add more custom styles as needed */
